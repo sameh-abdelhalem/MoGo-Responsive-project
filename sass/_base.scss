@@ -1,31 +1,29 @@
-@font-face {
-  font-family: Cairo;
-  src: url(../../fonts/Cairo-Regular.ttf);
-}
 *,
 html,
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Cairo;
+  font-family: "Montserrat";
   font-size: 16px;
 
   a {
-    text-decoration: none;
-    color: black;
     font-size: convertFont(14);
     font-weight: bold;
   }
   ul {
     list-style-type: none;
   }
-  .fa {
-    font-size: 2rem;
-  }
 
   h1 {
-    font-size: convertFont(50);
+    font-size: convertFont(150);
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: convertFont(0.933);
+    text-align: center;
+    z-index: 17;
   }
   h2 {
     font-size: convertFont(35);
