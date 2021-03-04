@@ -1,0 +1,23 @@
+header {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  a {
+    color: white !important;
+  }
+
+  .nav-link:hover {
+    color: $activeCol !important;
+  }
+  .active a {
+    color: $activeCol !important;
+  }
+  .active a::after {
+    content: "";
+    display: block;
+    height: convertFont(3);
+    background-color: $activeCol;
+    position: relative;
+    top: 0.3rem;
+  }
+}
