@@ -38,4 +38,42 @@ header {
     z-index: 1000;
     bottom: -20%;
   }
+  .btn-outline-light {
+    border: 3px solid white;
+    color: white;
+    padding: 0.3rem 1.5rem 0.3rem 1.5rem;
+  }
+  // carousel styling
+  .carousel-inner {
+    height: convertFont(890);
+  }
+  .carousel-indicators {
+    margin: 0;
+    li {
+      width: 100%;
+      text-indent: 0 !important;
+      p {
+        font-size: convertFont(18);
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: left;
+      }
+    }
+    li.active {
+      background-color: #fff;
+      position: relative;
+    }
+    li.active ::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      height: 3px;
+      width: 25%;
+      background-color: #f38181;
+    }
+  }
 }
