@@ -1,5 +1,5 @@
 header {
-  height: 44rem;
+  height: convertFont(1000);
   background: linear-gradient(
       to bottom,
       rgba(243, 129, 129, 0.9),
@@ -14,5 +14,28 @@ header {
   .nav-icon {
     font-size: 1rem;
     //   color: white;
+  }
+  h2 {
+    font-size: convertFont(72);
+    font-family: "Kaushan Script", cursive;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+  }
+  h1 {
+    position: relative;
+  }
+  h1::after {
+    content: "";
+
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    display: block;
+    width: convertFont(60);
+    height: convertFont(3);
+    right: 50%;
+    margin-right: convertFont(-30);
+    z-index: 1000;
+    bottom: -20%;
   }
 }

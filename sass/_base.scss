@@ -21,9 +21,8 @@ body {
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-transform: uppercase;
-    line-height: convertFont(0.933);
+    line-height: 0.933;
     text-align: center;
-    z-index: 17;
   }
   h2 {
     font-size: convertFont(35);
