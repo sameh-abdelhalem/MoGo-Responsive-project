@@ -1,5 +1,5 @@
 header {
-  height: convertFont(1000);
+  // height: convertFont(1000);
   background: linear-gradient(
       to bottom,
       rgba(243, 129, 129, 0.9),
@@ -44,8 +44,8 @@ header {
     padding: 0.3rem 1.5rem 0.3rem 1.5rem;
   }
   // carousel styling
-  .carousel-inner {
-    height: convertFont(890);
+  .carousel {
+    height: convertFont(1000);
   }
   .carousel-indicators {
     margin: 0;
@@ -87,6 +87,22 @@ header {
       height: 3px;
       width: 25%;
       background-color: #f38181;
+    }
+  }
+}
+
+// custom queries
+@media only screen and (max-width: 992px) {
+  header {
+    .carousel {
+      height: convertFont(600);
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  header {
+    .carousel {
+      height: convertFont(500);
     }
   }
 }
