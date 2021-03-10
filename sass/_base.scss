@@ -25,7 +25,32 @@ body {
     text-align: center;
   }
   h2 {
-    font-size: convertFont(35);
+    font-size: convertFont(30);
+    font-family: "Montserrat";
+    color: $textCol;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    position: relative;
+  }
+  h2::after {
+    content: "";
+    background-color: $afterCol;
+    position: absolute;
+    display: block;
+    width: convertFont(60);
+    height: convertFont(3);
+    right: 50%;
+    margin-right: convertFont(-30);
+    bottom: -80%;
+  }
+  h3 {
+    font-size: convertFont(24);
+    font-family: "Kaushan Script";
+    color: $textCol;
+    line-height: 1.2;
+    text-align: center;
   }
   h4 {
     font-size: convertFont(16);
