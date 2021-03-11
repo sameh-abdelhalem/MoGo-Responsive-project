@@ -25,7 +25,7 @@
   height: 100%;
   box-shadow: 10px 10px $primaryCol;
 
-  transition: 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   opacity: 0;
 }
 .about__cards__card:hover .card-hover {
