@@ -27,6 +27,7 @@
 
   transition: all 0.2s ease-in-out;
   opacity: 0;
+  flex-grow: 1;
 }
 .about__cards__card:hover .card-hover {
   opacity: 100%;
