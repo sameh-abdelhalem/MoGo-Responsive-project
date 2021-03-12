@@ -1,0 +1,39 @@
+.features {
+  background: url(../../img/banner/feature-bg.png);
+  height: convertFont(850);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: space-between;
+  .features__images {
+    position: relative;
+    max-width: 100%;
+    align-self: center;
+  }
+
+  .features__phone {
+    position: absolute;
+    bottom: -15%;
+    left: 70%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .features {
+    .features__phone {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .features {
+    height: convertFont(740);
+    .features__tablet {
+      display: none;
+    }
+    .features__phone {
+      display: block;
+      position: unset;
+    }
+  }
+}

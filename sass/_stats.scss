@@ -1,0 +1,27 @@
+.stats {
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: $primaryCol;
+
+  line-height: 1.2;
+  h4 {
+    font-size: convertFont(72);
+  }
+  p {
+    font-size: convertFont(14);
+  }
+
+  .stats__stat {
+    border-right: 1.5px solid #b5eae0;
+  }
+  .container .row > div:first-of-type {
+    border-left: 1.5px solid #b5eae0;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .stats .stats__stat {
+    border: none !important;
+  }
+}
