@@ -1,34 +1,45 @@
-.about__cards__card {
-  position: relative;
-}
-.aboutus__cards {
-  a {
+.aboutus {
+  .aboutus__text {
+    p {
+      font-size: 15px;
+      font-family: "Roboto";
+      width: 85%;
+      line-height: 1.6;
+      color: rgb(153, 153, 153);
+    }
+  }
+  .about__cards__card {
+    position: relative;
+  }
+  .aboutus__cards {
+    a {
+      height: 100%;
+    }
+    p {
+      margin: 0;
+    }
+  }
+  .card-hover {
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(243, 129, 129, 0.9),
+      rgba(252, 227, 138, 0.9)
+    );
+    padding: 0;
+    right: 0;
+    width: 100%;
     height: 100%;
-  }
-  p {
-    margin: 0;
-  }
-}
-.card-hover {
-  color: #fff;
-  text-align: center;
-  position: absolute;
-  top: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(243, 129, 129, 0.9),
-    rgba(252, 227, 138, 0.9)
-  );
-  padding: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  box-shadow: 10px 10px $primaryCol;
+    box-shadow: 10px 10px $primaryCol;
 
-  transition: all 0.2s ease-in-out;
-  opacity: 0;
-  flex-grow: 1;
-}
-.about__cards__card:hover .card-hover {
-  opacity: 100%;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    flex-grow: 1;
+  }
+  .about__cards__card:hover .card-hover {
+    opacity: 100%;
+  }
 }
