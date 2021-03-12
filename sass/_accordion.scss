@@ -26,8 +26,7 @@
     font-style: italic;
     line-height: 1.6;
 
-    width: convertFont(525);
-    height: convertFont(145);
+    height: convertFont(120);
     overflow-x: hidden;
     overflow-y: auto;
   }
@@ -42,5 +41,12 @@
   }
   .card-header {
     background-color: transparent;
+  }
+  .title-icon {
+    i {
+      color: $primaryCol;
+      font-size: 2rem;
+      margin-right: 1rem;
+    }
   }
 }
